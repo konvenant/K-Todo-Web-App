@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background */
+  }
+  
+  .todo-page {
+    width: 100%;
+    max-width: 900px; /* Adjust for larger screens */
+    margin: 50px auto; /* Center the page */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; /* White background for the page */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .todo-page h1 span {
+    color: #4CAF50; /* Green color for category name */
+  }
+  
+  /* Messages */
+  .error-message,
+  .success-message {
+    color: red; /* Error message color */
+    /* or */
+    color: green; /* Success message color (adjust based on preference) */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Add Todo Section */
+  .add-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-todo input {
+    flex: 1; /* Input takes up most of the space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .add-todo button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 8px;
+  }
+  
+  .add-todo button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+  /* Todo List Section */
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Checkbox */
+  .todo-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Completed Todo */
+  .todo-item span.completed {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
+  /* Delete Button */
+  .todo-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .add-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .add-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  .todo-item button:hover {
+    color: #f00; /* Red on hover */
+  }
+
+  .delete:hover {
+    color: #c0392b; /* Reddish color for delete icon on hover */
+  }
+  
+  .todo-item button svg {
+    /* Style your DeleteIcon component here */
+    fill: #ccc; /* Adjust color if needed */
+  }
+  
+  .share-button {
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjust padding for desired size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: inline-flex; /* Allow for centering of text and icon (optional) */
+    align-items: center; /* Center text and icon vertically (optional) */
+    justify-content: center; /* Center text and icon horizontally (optional) */
+  }
+  
+  .share-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  .share-button svg { /* Assuming you have an icon for sharing */
+    margin-right: 5px; /* Add some space between icon and text */
+    width: 18px; /* Adjust icon size as needed */
+    height: 18px; /* Adjust icon size as needed */
+    fill: white; /* White fill color for the icon */
+  }
+
+  /* Loading Spinner (Optional) */
+  .loading-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex; /* Center the spinner horizontally */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure modal stays on top */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  

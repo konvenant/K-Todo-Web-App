@@ -1,0 +1,163 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-size: cover;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.container {
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+}
+
+.header img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+.header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000acf; /* Purple color */
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #3f2222;
+  }
+  
+  /* Optional: Add additional styles for specific h2 elements if needed */
+  h2.username {
+    color: #007bff; /* Custom color for username related headings */
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #000acf; /* Purple color */
+  }
+  
+  label {
+    font-weight: bold;
+    color: #000acf; /* Purple color */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000acf; /* Purple color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #4a148c; /* Darker shade of purple */
+  }
+  
+  .error-message,
+.success-message {
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  background-color: #ffcccb; /* Light red background */
+  color: #d32f2f; /* Dark red color */
+}
+
+.success-message {
+  background-color: #c8e6c9; /* Light green background */
+  color: #388e3c; /* Dark green color */
+}
+
+  
+  p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  button.switch-btn {
+    background-color: transparent;
+    border: none;
+    color: #000acf; /* Purple color */
+    cursor: pointer;
+  }
+  
+  button.switch-btn:hover {
+    text-decoration: underline;
+  }
+  
+
+  

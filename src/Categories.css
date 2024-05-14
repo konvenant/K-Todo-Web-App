@@ -1,0 +1,315 @@
+/* Main container */
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Error and success messages */
+.error-message,
+.success-message {
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+.success-message {
+  color: #008000;
+}
+
+/* Add category section */
+.add-category {
+  margin-bottom: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.5s ease;
+  max-width: 90%;
+  width: 400px;
+}
+
+.modal input[type="text"] {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.modal input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal button {
+  padding: 12px 20px;
+  margin: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+/* Search container */
+.search-container {
+  margin-bottom: 20px;
+}
+
+/* Search icon */
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-container input :focus{
+  border: 1px solid #0056b3;
+}
+
+
+.no-category-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.no-category-message p {
+  margin: 5px 0;
+  color: #555;
+}
+  
+
+
+.sort-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.sort-icon:hover {
+  opacity: 0.8;
+}
+
+.sort-icon:focus {
+  outline: none;
+}
+
+
+/* Category list */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.category-list li {
+  margin-bottom: 10px;
+}
+
+/* Floating action button */
+.fab {
+  position: fixed;
+  bottom: 15%;
+  right: 25%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.fab:hover {
+  background-color: #0056b3;
+}
+
+.logout {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  background-color: #ff1100;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 999;
+  margin-left: 20px;
+}
+
+.logout:hover {
+  background-color: #b30000;
+}
+
+
+.person {
+  position: fixed;
+  bottom: 20px;
+  left: 5%;
+  background-color: #0cd81d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 999;
+  margin-left: 20px;
+}
+
+.person:hover {
+  background-color: #06500c;
+}
+
+.category-list li {
+  display: flex; /* Allow horizontal layout for name and button */
+  justify-content: space-between; /* Space name and button evenly */
+  align-items: center; /* Align vertically */
+  padding: 10px;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Indicate clickable action */
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 5px; /* Add some margin between items */
+}
+
+.category-list li:hover {
+  background-color: #eee; /* Slight background change on hover */
+}
+
+.category-list li span {
+  flex: 1; /* Allow name to expand and fill available space */
+  font-weight: bold; /* Emphasize category name */
+}
+
+.category-list li button {
+  border: none; /* Remove default button border */
+  background-color: transparent; /* Transparent background */
+  padding: 5px; /* Reduce padding for a cleaner look */
+  cursor: pointer; /* Indicate clickable action */
+  transition: color 0.2s ease-in-out; /* Add hover effect for icon */
+}
+
+.category-list li button:hover {
+  color: #c0392b; /* Reddish color for delete icon on hover */
+}
+
+.category-list li button svg { /* Assuming DeleteIcon uses svg */
+  width: 20px; /* Consistent icon size */
+  height: 20px; /* Consistent icon size */
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 80%;
+  }
+
+  .fab {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .logout {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Loading modal */
+.loading-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+.loading-modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-left-color: #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal {
+    width: 90%;
+    max-width: 300px;
+  }
+}
