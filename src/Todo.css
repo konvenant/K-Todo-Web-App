@@ -202,10 +202,14 @@ body {
   @media screen and (max-width: 500px) {
   
     .todo-page {
-      width: 70%;
+      width: 75%;
       max-width: 900px; /* Adjust for larger screens */
       margin: 50px auto; /* Center the page */
       
+    }
+
+    .add-todo input {
+      width: 80%;
     }
     
   }
