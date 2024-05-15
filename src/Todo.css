@@ -202,7 +202,7 @@ body {
   @media screen and (max-width: 500px) {
   
     .todo-page {
-      width: 85%;
+      width: 70%;
       max-width: 900px; /* Adjust for larger screens */
       margin: 50px auto; /* Center the page */
       
