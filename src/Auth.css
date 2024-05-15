@@ -158,6 +158,14 @@ body {
   button.switch-btn:hover {
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 500px) {
+  
+    .container {
+     width: 80%;
+    }
+    
+  }
   
 
   

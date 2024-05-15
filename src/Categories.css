@@ -248,17 +248,9 @@
     width: 80%;
   }
 
-  .fab {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
 
-  .logout {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
+
+
 }
 
 /* Loading modal */
@@ -309,7 +301,18 @@
 
 @media screen and (max-width: 500px) {
   .modal {
-    width: 90%;
+    width: 70%;
     max-width: 300px;
+  }
+
+  .fab {
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+  }
+  .person {
+    position: fixed;
+    bottom: 20px;
+    left: 13%;
   }
 }
