@@ -167,9 +167,9 @@ function CategoriesPage({ onLogout }) {
     <div className="categories-container">
       {error && <p className="error-message">{error}</p>}
       {success && <p className="success-message">{success}</p>}
-      <div className="header"> <img src={myLogo} alt='logo' /> <h1>Welcome back {username}</h1>
+      <div className="header"> <img src={myLogo} alt='logo' /> <h4>Welcome back {username}!!</h4>
       </div>
-       <h2> My Todo Categories</h2>
+       <h5> My Todo Categories</h5>
       
       <div className="add-category">
         {showModal && (

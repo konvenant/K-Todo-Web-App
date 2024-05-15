@@ -10,7 +10,13 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+h4{
+  color: #0056b3;
+}
 
+h5{
+  color: #06500c;
+}
 
 /* Error and success messages */
 .error-message,
