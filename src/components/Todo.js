@@ -138,7 +138,7 @@ function TodoPage() {
 
   return (
     <div className="todo-page">
-    <div className="header"> <img src={myLogo} alt='logo' />   <h1>Todo Category - {category}</h1>
+    <div className="header"> <img src={myLogo} alt='logo' />   <h1>{category}</h1>
       </div>
     
       {error && <p className="error-message">{error}</p>}
